@@ -8,13 +8,15 @@
 
 **Define dependencies. Run independent work in parallel. Keep failures visible.**
 
-[简体中文](README.zh-CN.md) · [Roadmap](ROADMAP.md)
+[Run a workflow](#run-a-workflow) · [简体中文](README.zh-CN.md) · [Roadmap](ROADMAP.md)
 
 </div>
 
 Task Weaver is a small, in-process Java task executor. It validates a DAG before running anything, passes dependency results into each action and reports which tasks succeeded, failed or were skipped. No runtime dependencies, network services or company code.
 
-## Run the example
+<a id="run-the-example"></a>
+
+## Run a workflow
 
 Requires a JDK 17+ and Python 3.11+ for the portable build helper. Python is only used to invoke Java tools.
 
@@ -32,7 +34,7 @@ count      SUCCEEDED  3
 report     SUCCEEDED  total=54, count=3
 ```
 
-The example uses synthetic values. `total` and `count` can run concurrently after `extract`; `report` waits for both.
+The built-in workflow uses synthetic values. `total` and `count` can run concurrently after `extract`; `report` waits for both.
 
 ## Use the API
 
@@ -77,6 +79,6 @@ Await the execution future before closing the engine. `close()` shuts down the e
 
 ## Verify
 
-`python scripts/build.py --test` runs 17 assertions, including dependency values, graph rejection, failure propagation, parallel execution, worker limits and null values. GitHub Actions checks Windows and Linux with Java 17 and 21, then runs the packaged demo.
+`python scripts/build.py --test` runs 17 assertions, including dependency values, graph rejection, failure propagation, parallel execution, worker limits and null values. GitHub Actions checks Windows and Linux with Java 17 and 21, then runs the packaged workflow.
 
 Independent personal project · AI-assisted development · MIT license

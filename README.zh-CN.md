@@ -4,9 +4,11 @@
 
 Java 任务执行器，按依赖调度任务，让独立步骤并行运行
 
-[English](README.md) · [后续计划](ROADMAP.md)
+[运行任务编排](#运行任务编排) · [English](README.md) · [后续计划](ROADMAP.md)
 
-## 快速体验
+<a id="快速体验"></a>
+
+## 运行任务编排
 
 需要 JDK 17+ 和 Python 3.11+，Python 仅用于跨平台构建脚本，执行器本身没有第三方运行依赖
 
@@ -15,7 +17,7 @@ python scripts/build.py --test
 java -jar build/task-weaver.jar --zh
 ```
 
-内置示例先读取合成数据，再并行计算总数与数量，最后生成汇总结果
+内置流程先读取合成数据，再并行计算总数与数量，最后生成汇总结果
 
 ## 主要功能
 
@@ -40,6 +42,6 @@ java -jar build/task-weaver.jar --zh
 
 本地测试包含 17 项断言，覆盖依赖传值、图校验、失败传播、并行执行、线程上限和空值
 
-CI 在 Windows / Linux、Java 17 / 21 上运行测试并执行打包示例
+CI 在 Windows / Linux、Java 17 / 21 上运行测试并执行打包后的流程
 
-独立个人项目 · 合成示例 · AI 辅助开发
+独立个人项目 · 合成数据 · AI 辅助开发
