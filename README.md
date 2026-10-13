@@ -2,7 +2,7 @@
 
 ![Task Weaver — dependency-aware execution](assets/banner.svg)
 
-[![Checks](https://github.com/honggege957-collab/task-weaver/actions/workflows/ci.yml/badge.svg)](https://github.com/honggege957-collab/task-weaver/actions/workflows/ci.yml)
+[![Checks](https://github.com/chenpingan-dev/task-weaver/actions/workflows/ci.yml/badge.svg)](https://github.com/chenpingan-dev/task-weaver/actions/workflows/ci.yml)
 ![Java 17+](https://img.shields.io/badge/Java-17%2B-2563eb?style=flat-square)
 ![MIT](https://img.shields.io/badge/license-MIT-2563eb?style=flat-square)
 
